@@ -22,86 +22,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="3" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="4" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="5" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="6" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="7" />
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="8" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="9" />
-        </LinearLayout>
+            android:orientation="horizontal"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,21 +32,16 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnzero"
+                android:id="@+id/btnpause"
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
-                android:text="00" />
+                android:foreground="@drawable/ic_pause"
+                android:foregroundGravity="center"
+                android:foregroundTint="@color/white" />
 
             <Button
-                android:id="@+id/buttonziro"
-                android:layout_width="wrap_content"
-                android:layout_height="64dp"
-                android:layout_weight="1"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/buttondel"
+                android:id="@+id/btnstop"
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
@@ -138,7 +56,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/btnstart"
                 android:layout_width="wrap_content"
                 android:layout_height="64dp"
                 android:layout_weight="1"
@@ -156,9 +74,10 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
+        android:text=""
         android:textSize="34sp"
-        android:text="00 Час. 00 Мин."
-               app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
