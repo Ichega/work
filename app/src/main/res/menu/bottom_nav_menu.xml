@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Post"
+        android:icon="@drawable/posts"
+        android:title="@string/title_Posts" />
+
+    <item
+        android:id="@+id/navigation_Time"
+        android:icon="@drawable/ic_timer"
+        android:title="@string/title_Time" />
+
+    <item
+        android:id="@+id/navigation_Profile"
+        android:icon="@drawable/profile"
+        android:title="@string/title_Profile" />
+    <item
+        android:id="@+id/navigation_Name"
+        android:icon="@drawable/ic_name"
+        android:title="@string/name_fragment"/>
+
+</menu>
