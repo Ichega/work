@@ -13,7 +13,7 @@ class TimeFragment : Fragment() {
     private var _binding: FragmentTimerBinding? = null
     private val binding get() = _binding!!
     private var countdown_timer: CountDownTimer? = null
-    private var time_in_milliseconds = 60000L
+    private var time_in_milliseconds = 10000L
     private var pauseOffSet = 0L
 
 
@@ -33,7 +33,7 @@ class TimeFragment : Fragment() {
    binding.time.text = "${(time_in_milliseconds / 1000).toString()}"
         binding.btnstart.setOnClickListener {
             starTimer(pauseOffSet)
-            Toast.makeText(requireContext(), "Нача", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Начать", Toast.LENGTH_SHORT).show()
         }
         binding.btnpause.setOnClickListener {
             pauseTimer()
